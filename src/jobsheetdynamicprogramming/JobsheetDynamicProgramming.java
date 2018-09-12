@@ -5,6 +5,8 @@
  */
 package jobsheetdynamicprogramming;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Tarishaulia
@@ -24,6 +26,15 @@ public class JobsheetDynamicProgramming {
         public static void main(String[] args){
             String identitas = "Rizqita Tarish Aulia / XRPL5 / 37";
             tampilJudul(identitas);
+            int n = tampilInput();
+        }
+        private static int tampilInput(){
+            Scanner scanner = new Scanner(System.in);
+            
+            System.out.print("Bilangan ke-: ");
+            int n = scanner.nextInt();
+            
+            return n;
         }
     }
     
